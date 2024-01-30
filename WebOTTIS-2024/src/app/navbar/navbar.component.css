@@ -3,3 +3,17 @@
     display: inline-block;
     margin-right: 10px; /* Espaciado opcional entre elementos */
 }
+.custom-dropdown {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  /* Cambia el color de texto para las opciones de la barra principal */
+
+  
+  /* Cambia el color de texto y fondo para las opciones del submenu al pasar el mouse sobre ellas */
+  .nav-link:hover {
+    color: #00529b;
+    background-color: transparent; /* Puedes ajustar esto según sea necesario */
+  }
+  

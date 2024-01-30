@@ -1,53 +1,55 @@
 <!-- <p>navbar works!</p> -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white">
   <div class="container-fluid container">
-    <a class="navbar-brand col-md-3 col-1" href="#">
+    <a class="navbar-brand col-md-3 col-1" routerLink="/">
       <img src="assets/images/logo_ottis.png" alt="Logo" width="200" height="77" class="d-inline-block align-text-top">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse col-md-6" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav list-unstyled bg-transparent">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+          <a class="nav-link nav-main" aria-current="page" routerLink="/about">Nosotros</a>
         </li>
         <li class="nav-item dropdown">
-          <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
+          <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
             Servicios
           </button>
-          <ul class="dropdown-menu dropdown-menu-end " data-bs-popper="static">
+          <ul class="dropdown-menu dropdown-menu-end custom-dropdown">
             <li>
-              <a class="dropdown-item d-flex align-items-center justify-content-between " aria-current="true" href="/docs/5.3/utilities/background/">
+              <a class="dropdown-item nav-link nav-sub" aria-current="true" href="/docs/5.3/utilities/background/">
                 Internet
               </a>
             </li>
             <li>
-                <a class="dropdown-item" href="#">Planes</a>
+              <a class="dropdown-item nav-sub nav-link" href="#">Planes</a>
             </li>
             <li>
-                <a class="dropdown-item" href="#">Otros Servicios</a>
+              <a class="dropdown-item nav-link nav-sub" href="#">Otros Servicios</a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Atención al Cliente</a>
+          <a class="nav-link nav-main" href="#">Atención al Cliente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" >Normatividad</a>
+          <a class="nav-link nav-main" href="#">Normatividad</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">Contacto</a>
+          <a class="nav-link nav-main" href="#">Contacto</a>
         </li>
       </ul>
+      
+      
       <div class="col-md-3 d-flex justify-content-end">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://www.facebook.com/ottiscomunica/" target="_blank">
           <img src="assets/images/logo_ottis.png" alt="Logo" width="20" height="24" class="d-inline-block align-text-top">
         </a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://www.instagram.com/ottis_comunicaciones/" target="_blank">
           <img src="assets/images/logo_ottis.png" alt="Logo" width="20" height="24" class="d-inline-block align-text-top">
         </a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://www.youtube.com/@fsdcomunicacioness.a.s3326" target="_blank">
           <img src="assets/images/logo_ottis.png" alt="Logo" width="20" height="24" class="d-inline-block align-text-top">
         </a>
       </div>
@@ -56,3 +58,4 @@
     
   </div>
 </nav>
+<router-outlet></router-outlet>
