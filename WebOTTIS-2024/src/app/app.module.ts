@@ -8,6 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { PlansComponent } from './plans/plans.component';
+import { InternetComponent } from './internet/internet.component';
+import { OtherServicesComponent } from './other-services/other-services.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { AboutComponent } from './about/about.component';
     NavbarComponent,
     ButtonsComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    PlansComponent,
+    InternetComponent,
+    OtherServicesComponent
   ],
   imports: [
     BrowserModule,
